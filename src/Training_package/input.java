@@ -12,8 +12,13 @@ public class input {
         System.out.println("5" + 1);
         System.out.println(4.5);
 
-        int a = 30;
+        int a = 30; //변수는 소문자로 시작
         String b = "5";
+        String ourClassNum = "하하"; //2개 이상의 단어 결합 시 새 단어는 대문자로
+
+        final int A = 10; //상수는 대문자로
+        final int MY_DATA = 20; //상수 2개 이상 단어 결합 시 _로 연결
+
         System.out.println("숫자:" + a);
         System.out.println("문자:" + b);
         System.out.println(a + b);
