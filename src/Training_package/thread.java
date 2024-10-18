@@ -1,8 +1,8 @@
 package Training_package;
-public class chapter2 extends Thread {
+public class thread extends Thread {
     int a;
 
-    public chapter2(int a) {
+    public thread(int a) {
         this.a = a;
     }
 
@@ -18,7 +18,7 @@ public class chapter2 extends Thread {
         System.out.println("Thread만 만드는 것과 Runnable을 만들어서 Thread를 만드는 것은 다름: Thread만 만들면 아무 짓도 안 하기 때문");
 
         for (int i = 0; i < 10; i++) {  // 총 10개의 쓰레드를 생성하여 실행한다.
-            chapter2 thread = new chapter2(i);
+            thread thread = new thread(i);
             thread.start(); //스레드 실행
         }
        System.out.println("main end.");
