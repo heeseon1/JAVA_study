@@ -13,17 +13,17 @@ public class while_switch {
           int a = 1;
           while (true) {
               a = a + 1;
-              System.out.printf("%d \n", a); //while(true)°ªÀº Ç×»ó ÂüÀÌ±â ¶§¹®¿¡ breake ¹®ÀÌ È£Ãâ µÇ±â Àü±îÁö´Â ¹«Á¶°Ç Ãâ·Â
+              System.out.printf("%d \n", a); // while(true)ë¬¸ì€ ë°˜ë“œì‹œ ë¬´í•œ ë£¨í”„ê°€ ë˜ë¯€ë¡œ break ë¬¸ì„ í˜¸ì¶œí•˜ì—¬ ì¢…ë£Œí•  ì¡°ê±´ì„ ë§Œë“¤ì–´ì•¼ í•¨
 
               if( a == 4){
-                  System.out.println("while È½¼ö Á¤ÇØÁø °ÍÀ» Ã³¸®ÇÏ±âº¸´Ü Á¶°ÇÀÌ Á¤ÇØÁ® ÀÖÀ» °æ¿ì¸¦ Ã³¸®");
+                  System.out.println("while ë¬¸ ë‚´ë¶€ì—ì„œ breakë¡œ ë£¨í”„ë¥¼ ì¤‘ë‹¨í•˜ê³  ë‚˜ê°");
                   break;
               }
           }
           
     int value = 6;
           
-          // switch ¹® : °¢ case¿¡¼­ ¸í·É¹®À» ½ÇÇàÇÑ ÈÄ Å»ÃâÀ» À§ÇØ break¸¦ »ç¿ëÇÏ±â
+          // switch ë¬¸ : ê° caseì—ì„œ ë§Œì¡±í•˜ë©´ ê·¸ ì´í›„ëŠ” ì „ë¶€ ì‹¤í–‰ë˜ë¯€ë¡œ breakë¥¼ ì¶”ê°€í•˜ì—¬ ë¹ ì ¸ë‚˜ì˜´
           switch(value) { 
               case 1: 
                   System.out.println("1");
@@ -35,18 +35,18 @@ public class while_switch {
                   System.out.println("3");
                   break;
               default :
-                  System.out.println("ÇØ´ç ¼ıÀÚ¿Í ÀÏÄ¡ÇÏ´Â °ªÀÌ ¾ø½À´Ï´Ù.");
+                  System.out.println("í•´ë‹¹ ìˆ«ìì— ì¼ì¹˜í•˜ëŠ” ê°’ì´ ì—†ìŠµë‹ˆë‹¤.");
           }
-          // 1.7 ¹öÀü ÀÌÈÄºÎÅÍ´Â switch ¹®¿¡¼­ ¹®ÀÚ¿­µµ »ç¿ë °¡´É
+          // 1.7 ë²„ì „ë¶€í„°ëŠ” ë¬¸ìì—´ë„ switch ë¬¸ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìˆìŒ
           
           
-          // while¹® : Á¶°Ç ¾È¿¡¼­ °ªÀÌ ÂüÀÏ °æ¿ì °è¼ÓÇØ¼­ ¹İº¹
+          // whileë¬¸ : ì¡°ê±´ ì•ˆì—ì„œ ì‹¤í–‰ ë¬¸ì„ ë°˜ë³µí•˜ì—¬ ì‹¤í–‰
           while ( value < 10 ) {
               System.out.println(value);
               value += 1; // value++;
           }
           
-          // while¹®À» ÀÌ¿ëÇØ 100±îÁöÀÇ ÇÕ ±¸ÇÏ±â
+          // whileë¬¸ì„ ì´ìš©í•œ 100ê¹Œì§€ì˜ í•© ê³„ì‚°
           int total = 0;
           int i = 1;
           
@@ -57,7 +57,7 @@ public class while_switch {
           System.out.println(total);
           
 
-          // while ¹®¿¡¼­ Â¦¼ö¸¸ Ãâ·ÂÇÏ±â
+          // while ë¬¸ì—ì„œ ì§ìˆ˜ë§Œ ì¶œë ¥í•˜ê¸°
           int s = 1;
           while(s < 11) {
               if( s % 2 == 0) {
@@ -66,22 +66,20 @@ public class while_switch {
               s++; 
           } 
           
-          // do while¹® : Á¶°ÇÀÌ ¸ÂÁö ¾Ê¾Æµµ 1¹øÀº ½ÇÇàµÇ´Â ¹İº¹¹®
+          // do whileë¬¸ : ì¡°ê±´ì´ ë§ì§€ ì•Šì•„ë„ 1íšŒëŠ” ë°˜ë“œì‹œ ì‹¤í–‰ë˜ëŠ” ë°˜ë³µë¬¸
           int num = 0;
           
-          // input Å¬·¡½º
+          // input í´ë˜ìŠ¤
           Scanner scan = new Scanner(System.in);
           
           do {
-              // ¹İº¹ÇÒ ¹®Àå ÀÛ¼º (1¹øÀº ½ÇÇà)
-              num = scan.nextInt(); // Á¤¼ö°ªÀ» ÀÔ·Â¹Ş¾Æ ³Ö¾îÁÖ´Â °Í: nextInt()
-              System.out.println("ÀÔ·Â¹ŞÀº °ª:" + num);
+              // ë°˜ë³µë¬¸ ë‚´ìš© ì‘ì„± (1íšŒ ì‹¤í–‰)
+              num = scan.nextInt(); // ì‚¬ìš©ìë¡œë¶€í„° ê°’ì„ ì…ë ¥ë°›ì„ ë•Œ: nextInt()
+              System.out.println("ì…ë ¥ë°›ì€ ê°’:" + num);
               
           } while( num != 10 );
           
-          System.out.println("¹İº¹ Á¾·á");
-          
-
+          System.out.println("ë°˜ë³µ ì¢…ë£Œ");
           
       }
       

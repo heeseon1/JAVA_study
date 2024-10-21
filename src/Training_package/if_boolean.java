@@ -4,19 +4,19 @@ public class if_boolean {
 
 	  public static void main(String[] args) {
 	        
-	        // if¹® ±âº»
+	        // ifì˜ ê¸°ë³¸
 	        int x = 60;
 	        int y = 60;
 	        
 	        if(  x < y ) {
-	            System.out.println("x´Â yº¸´Ù ÀÛ½À´Ï´Ù.");
+	            System.out.println("xëŠ” yë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤.");
 	        } else if( x > y ){
-	            System.out.println("x´Â yº¸´Ù Å®´Ï´Ù.");
+	            System.out.println("xëŠ” yë³´ë‹¤ í½ë‹ˆë‹¤.");
 	        } else if(x == y) {
-	            System.out.println("x´Â y¿Í °°½À´Ï´Ù.");
+	            System.out.println("xëŠ” yì™€ ê°™ìŠµë‹ˆë‹¤.");
 	        }
 	        
-	        // ³í¸® ¿¬»êÀÚ
+	        // ë…¼ë¦¬ ì—°ì‚°ì
 	        boolean a1 = true;
 	        boolean a2 = false;
 	        boolean a3 = true;
@@ -31,13 +31,13 @@ public class if_boolean {
 	        int score = 88;
 	        
 	        if (score <= 100 && score >= 90) {
-	            System.out.println("Aµî±Ş ÀÔ´Ï´Ù.");
+	            System.out.println("Aí•™ì  ì…ë‹ˆë‹¤.");
 	        } else {
-	            System.out.println("Aµî±ŞÀÌ ¾Æ´Õ´Ï´Ù.");
+	            System.out.println("Aí•™ì ì´ ì•„ë‹™ë‹ˆë‹¤.");
 	        }
 	        
-	        // »ïÇ× ¿¬»êÀÚ
-	        int b1 = (5 < 4) ? 50 : 40;  // Á¶°ÇÀÌ true¸é ¾ÕÀÇ °ª, false¸é µÚÀÇ °ª
+	        // ì‚¼í•­ ì—°ì‚°ì
+	        int b1 = (5 < 4) ? 50 : 40;  // ì¡°ê±´ì´ trueì¼ ë•Œ, falseì¼ ë•Œ ë°˜í™˜ ê°’
 	        System.out.println(b1);
 	    }
 
