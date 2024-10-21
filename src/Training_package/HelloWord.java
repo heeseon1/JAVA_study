@@ -7,6 +7,9 @@ public class HelloWord {
 	 * @param args
 	 */
 
+	// System.out.println 단축키: syso/sysout + 컨트롤 + 스페이스
+	
+	
 	//프로그램의 시작점
 	public static void main(String[] args) {
 		
