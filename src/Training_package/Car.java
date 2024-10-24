@@ -6,6 +6,17 @@ public class Car {
 	//타입 필드 선언 (속성 or 상태)
 	String name; //차 이름
 	int number; // 차 번호
+	
+	//생성자 생성
+	public Car(String name) {
+		this.name = name; 
+	}
+	// 매개변수를 name으로 잡게 되면 클래스에서 선언한 name 변수와 이름이 일치하게 되므로	null 값 생성이 됨 => 이럴 때 this 사용 (this? 내 클래스에서 선언한 필드)
+	
+	
+	
+	
+	
 
 /**메소드 선언 (행동 or 기능)
  * 입력값: 매개변수, 인자
@@ -42,6 +53,19 @@ public class Car {
 		System.out.println("method5 실행" + x);
 		return x + 20;
 	}
+	
+	//기본 생성자
+	public Car() {
+		//this.name = "noname";
+		this("이름없음", 0);
+		
+	}
+	
+	public Car(String name, int number) {
+		this.name = name;
+		this.number = number;
+	}
+	
 	
 
 }

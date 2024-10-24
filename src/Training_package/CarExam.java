@@ -6,23 +6,27 @@ public class CarExam {
 		//Car 클래스 객체 
 		// (new 뒤에 나오는 부분을 '생성자'라고 함, 메모리에 만들어진 객체를 '인스턴스'라고 함)
 		// 클래스와 new 연산자를 통해 만들어진 것을 인스턴스라 부르며, 인스턴스를 가리키는 변수가 래퍼런스
-		Car c1 = new Car();
-		Car c2 = new Car();
+		
+		// Car() : 기본 생성자 (생성자가 없을 경우) , 생성자를 추가하면 오류 발생
+		Car c1 = new Car( "경찰" ); 
+		Car c2 = new Car( "소방차" );
+		
+		Car c3 = new Car();
+		Car c4 = new Car("버스", 1111);
 		
 		//Car 클래스 필드(속성) 부여하기
-		c1.name = "경찰차";
 		c1.number = 1004;
-		
-		c2.name="검정차";
 		c2.number = 1234;
 		
-		System.out.println(c1.name);
 		System.out.println(c1.number);
 		System.out.println(c2.name);
 		System.out.println(c2.number);
+		System.out.println(c3.name + c3.number);
+		System.out.println(c4.name + c4.number);
 		
 		//Car 메서드 사용하기 (객체로 만들어야 사용 가능)
-		Car c3 = new Car();
+		Car c5 = new Car("구급차");
+		
 		
 		c3.method1();
 		c3.method2(5);
@@ -64,8 +68,11 @@ public class CarExam {
 			System.out.println("문자열이 같습니다.");
 		}
 		
+		overload exam = new overload();
+		System.out.println(exam.plus(1, 5));
+		System.out.println(exam.plus(1, 2, 3));
+		System.out.println(exam.plus("하", "하"));
 		
-
 
 	}
 
