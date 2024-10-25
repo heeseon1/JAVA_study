@@ -13,10 +13,6 @@ public class Car {
 	}
 	// 매개변수를 name으로 잡게 되면 클래스에서 선언한 name 변수와 이름이 일치하게 되므로	null 값 생성이 됨 => 이럴 때 this 사용 (this? 내 클래스에서 선언한 필드)
 	
-	
-	
-	
-	
 
 /**메소드 선언 (행동 or 기능)
  * 입력값: 매개변수, 인자
@@ -58,7 +54,7 @@ public class Car {
 	public Car() {
 		//this.name = "noname";
 		this("이름없음", 0);
-		
+		System.out.println("Car의 기본 생성자입니다");
 	}
 	
 	public Car(String name, int number) {
@@ -66,6 +62,10 @@ public class Car {
 		this.number = number;
 	}
 	
+	//상속
+	public void run() {
+		System.out.println("달리다");
+}
 	
 
 }
